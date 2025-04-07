@@ -381,6 +381,9 @@
     .index_banner_wrap_img {
         width: 150px;
     }
+    .index_banner_btn_inner {
+        justify-content: space-evenly;
+      }
     .index_banner_wrap_text {
         text-align: center;
     }

@@ -140,6 +140,11 @@ background-color: var(--black);
   transform: scaleX(1);
   background-color: var(--main-color);
 }
+.index_banner_btn_inner {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* justify-content: center; */
+}
 .common_btn {
   display: flex;
   justify-content: center;
