@@ -24,7 +24,7 @@ const Header = () => {
                     <div className="header_nav">
                         <ul>
                             <li><Link to="/">Home</Link></li>
-                            <li><a href="#aboutus">About Us</a></li>
+                            <li><a href="#aboutus">Experience</a></li>
                             {/* <li><Link to="/gallery">Gallery</Link></li> */}
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#skills1">Skills</a></li>

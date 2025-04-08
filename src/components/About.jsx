@@ -1,55 +1,78 @@
 import React from 'react'
 
+
 const about = () => {
   return (
     <>
-        <div className="about_wrapper" id="aboutus">
-            <div className="container">
-              <div className="about_wrap_text">
-                <h6>About US</h6>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid corporis sunt consectetur excepturi, iure temporibus amet deserunt. Minima hic, delectus assumenda at aspernatur recusandae! Soluta optio molestias eveniet architecto dolore laudantium at adipisci fuga ipsum voluptate. Voluptatum repellendus porro voluptatibus.</p>
-              </div>
-              <div className="about_wrap_box" data-aos="zoom-in" data-aos-duration="2000">
-                <div className="about_wrap_box_text">
-                  <h6>Experience - 1</h6>
-                  <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quas ratione, nobis voluptatum repellat autem architecto labore aliquid doloremque reprehenderit non, commodi nesciunt natus magni, veritatis expedita inventore! Consectetur, non? Aliquam quasi, porro magnam, rerum laborum enim fugit sunt perspiciatis impedit vitae quas? Vitae, enim quaerat? Alias numquam quas, dicta laboriosam nulla eveniet nisi ratione, corporis, amet soluta mollitia.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus optio quia nemo ea sapiente? Accusamus, quis aspernatur! Quas vel quaerat eligendi modi aliquid quo. Fugit amet quos blanditiis quia.</p>
-                </div>
-              </div>
-              <div className="about_wrap_box" data-aos="zoom-in" data-aos-duration="2000">
-                <div className="about_wrap_box_text">
-                  <h6>Experience - 2</h6>
-                  <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quas ratione, nobis voluptatum repellat autem architecto labore aliquid doloremque reprehenderit non, commodi nesciunt natus magni, veritatis expedita inventore! Consectetur, non? Aliquam quasi, porro magnam, rerum laborum enim fugit sunt perspiciatis impedit vitae quas? Vitae, enim quaerat? Alias numquam quas, dicta laboriosam nulla eveniet nisi ratione, corporis, amet soluta mollitia.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus optio quia nemo ea sapiente? Accusamus, quis aspernatur! Quas vel quaerat eligendi modi aliquid quo. Fugit amet quos blanditiis quia.</p>
-                </div>
-              </div>
-              <div className="about_wrap_box" data-aos="zoom-in" data-aos-duration="2000">
-                <div className="about_wrap_box_text">
-                  <h6>Experience - 3</h6>
-                  <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quas ratione, nobis voluptatum repellat autem architecto labore aliquid doloremque reprehenderit non, commodi nesciunt natus magni, veritatis expedita inventore! Consectetur, non? Aliquam quasi, porro magnam, rerum laborum enim fugit sunt perspiciatis impedit vitae quas? Vitae, enim quaerat? Alias numquam quas, dicta laboriosam nulla eveniet nisi ratione, corporis, amet soluta mollitia.</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus optio quia nemo ea sapiente? Accusamus, quis aspernatur! Quas vel quaerat eligendi modi aliquid quo. Fugit amet quos blanditiis quia.</p>
-                </div>
-              </div>
-                {/* <div className="row">
-                  <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div className="about_wrap_box" data-aos="zoom-in" data-aos-duration="2000">
-                      <div className="about_wrap_box_text">
-                        <h6>Education</h6>
-                        <ul>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                  </div>
-                </div> */}
+        <div id="aboutus" class="sectionClass">
+          <div class="row ">
+            <div class="sectiontitle">
+              <h2>Work Experience</h2>
+              <span class="headerLine"></span>
             </div>
-        </div> 
+            <div class="fullWidth eight columns">
+              <ul class="cbp_tmtimeline">
+                <li>
+                  <div class="cbp_tmicon cbp_tmicon-phone">
+                    {/* <i class="faPra fa-briefcase"></i> */}
+                    <img src='/images/idenfo.png'/>
+
+                  </div>
+                  <div class="cbp_tmlabel wow fadeInRight animated">
+                    <h3>Senior Software Engineer</h3>
+                    <div class="date">
+                      <i class="fa fa-calendar"></i>May 2023 - Current
+                    </div>
+                    <h4><i class="fa fa-flag"></i>Idenfo, Pakistan</h4>
+                    <p class="projectParagraph">
+                    Engineered robust API in Node.js enabling seamless data retrieval from MongoDB database leading to 25% reduction in loading time and improved user experience. 
+                    <br/>
+                    Carried out tasks including architecture setup of frontend and backend services and ensure consistency of patterns throughout the services or applications to make code comprehensive.
+                    <br/>
+                    Utilize server’s resources effectively while keeping check on cost of the system.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="cbp_tmicon cbp_tmicon-screen">
+                    {/* <i class="faPra fa-briefcase"></i> */}
+                    <img src='/images/linkstar.png'/>
+                  </div>
+                  <div class="cbp_tmlabel wow fadeInRight animated">
+                    <h3>Full Stack Developer</h3>
+                    <h4><i class="fa fa-flag"></i>Linkstar, Pakistan</h4>
+                    <div class="date"><i class="fa fa-calendar"></i>March 2022 - April 2023</div>
+                    <p class="projectParagraph">
+                      Proficiently managed micro services architecture for websites built on multiple tech stack like Node.js, Php, React and Next.js.
+                      <br/>
+                      Led end to end development of payment modules, analytics and themes, from ideation to deployment.
+                      <br/>
+                      Implemented performance boosting techniques like caching using Redis and database indexing.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="cbp_tmicon cbp_tmicon-mail">
+                    {/* <i class="faPra fa-briefcase"></i> */}
+                    <img src='/images/increaserev.png'/>
+                  </div>
+                  <div class="cbp_tmlabel wow fadeInRight animated">
+                    <h3>Junior Software Engineer</h3>
+                    <h4><i class="fa fa-flag"></i>Increase Rev, Pakistan</h4>
+                    <div class="date"><i class="fa fa-calendar"></i>August 2021 - February 2022</div>
+                    <p class="projectParagraph">
+                      Developed image optimization library and plugin which led to boosting 50% of website’s load speed on websites that contain high graphics content.
+                      <br />
+                      Conducted research on sql databases to optimize data fetching time through effective techniques like indexing, improving database architecture and lesser use of joins. 
+                    </p>
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
     </>
   )
 }
