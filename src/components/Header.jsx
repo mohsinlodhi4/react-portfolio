@@ -31,7 +31,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="header_btn">
-                        <a href="#footer_form" className="common_btn">Let's Chat </a>
+                        <a href="#footer" className="common_btn">Let's Chat </a>
                     </div>
                 </div>
             </div>
