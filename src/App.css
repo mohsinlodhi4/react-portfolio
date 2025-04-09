@@ -716,7 +716,7 @@ background-color: #75777c;
 .cbp_tmtimeline li:before {
   content: '';
   position: absolute;
-  top: 70%;
+  top: 65%;
   bottom: 0;
   width: 10px;
   background: var(--main-color);
