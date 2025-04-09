@@ -333,6 +333,7 @@ background-color: #75777c;
   height: 100%;
   object-fit: cover;
   transition: 0.5s all;
+  object-position: left;
 }
 .projext_wrap_box:hover .project_wrap_box_img img {
   transform: scale(1.1);
