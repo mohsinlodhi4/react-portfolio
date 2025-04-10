@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.7015a028.css",
+    "main.js": "/react-portfolio/static/js/main.68bb0d35.js",
+    "static/js/488.430f2afc.chunk.js": "/react-portfolio/static/js/488.430f2afc.chunk.js",
+    "static/media/project3.png": "/react-portfolio/static/media/project3.9a42eb5da28eb5c14f5f.png",
+    "static/media/footer_razer.png": "/react-portfolio/static/media/footer_razer.45fc0430251722a89b3b.png",
+    "static/media/project2.png": "/react-portfolio/static/media/project2.3e4b2a97fe244bc58e0b.png",
+    "static/media/sixth-wrap-img.png": "/react-portfolio/static/media/sixth-wrap-img.b777fd271829cde20544.png",
+    "static/media/amazon_sponsored.png": "/react-portfolio/static/media/amazon_sponsored.5834b454ecfb3b0dd45c.png",
+    "static/media/Syne-Bold.ttf": "/react-portfolio/static/media/Syne-Bold.4f7a3ab12ddb09781520.ttf",
+    "static/media/Syne-Medium.ttf": "/react-portfolio/static/media/Syne-Medium.767c33d27d5f99f3ed3e.ttf",
+    "static/media/Syne-Regular.ttf": "/react-portfolio/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
+    "static/media/bg_lines.png": "/react-portfolio/static/media/bg_lines.24359027aa982c5d0125.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.7015a028.css.map": "/react-portfolio/static/css/main.7015a028.css.map",
+    "main.68bb0d35.js.map": "/react-portfolio/static/js/main.68bb0d35.js.map",
+    "488.430f2afc.chunk.js.map": "/react-portfolio/static/js/488.430f2afc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7015a028.css",
+    "static/js/main.68bb0d35.js"
+  ]
+}
