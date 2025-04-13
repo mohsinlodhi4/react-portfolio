@@ -50,6 +50,41 @@ const Project = () => {
                 </div>
               </div>
             </div>
+            <div className="projext_wrap_box">
+              <div className="row">
+                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <div className="project_wrap_box_img" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="/images/pos.png" alt="" />
+                  </div>
+                </div>
+                <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <div className="project_wrap_box_inner" data-aos="fade-left" data-aos-duration="2000">
+                    <div className="project_wrap_box_text" >
+                      <h6>POS - MJ Farbrics</h6>
+                      <p> A Point of sale software for textile company to automate their processes like stock management, invoicing, ledgers and much more.</p>
+                    </div>
+                    <div className="project_wrap_box_list">
+                      <ul>
+                        <li>vue.js</li>
+                        <li>nuxt.js</li>
+                        <li>bootstrap</li>
+                      </ul>
+                      <ul>
+                        <li>redis</li>
+                        <li>php</li>
+                        <li>laravel</li>
+                        <li>mysql</li>
+                      </ul>
+                    </div>
+                    <div className="project_wrap_box_btn">
+                      {/* <Link to="/gallery" target='_blank' className="common_btn">View More</Link> */}
+                      {/* <Link to="" target='_blank' className="common_btn">Github Link</Link> */}
+                      <Link to="https://software.mjfabricsstore.com/" target='_blank' className="common_btn">Demo Link</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             
             <div className="projext_wrap_box">
               <div className="row">

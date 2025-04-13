@@ -28,6 +28,7 @@ const Header = () => {
                             {/* <li><Link to="/gallery">Gallery</Link></li> */}
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#skills1">Skills</a></li>
+                            <li><a href="#education">Education</a></li>
                         </ul>
                     </div>
                     <div className="header_btn">

@@ -6,7 +6,7 @@ import FifthIcon4 from '../front/images/icons8-docker-48.png'
 import FifthIcon5 from '../front/images/icons8-mysql-48.png'
 import FifthIcon6 from '../front/images/fifth-icon6.png'
 import FifthIcon7 from '../front/images/fifth-icon7.png'
-import FifthIcon8 from '../front/images/fifth-icon8.png'
+import FifthIcon8 from '../front/images/vue.png'
 import FifthIcon9 from '../front/images/fifth-icon9.png'
 import FifthIcon10 from '../front/images/icons8-postgres-48.png'
 import FifthIcon11 from '../front/images/fifth-icon11.png'
@@ -157,7 +157,7 @@ const Skills = () => {
                   <img src={FifthIcon8} alt="" />
                 </div>
                 <div className="skills_wrap_box_text">
-                    <h6>Rest API</h6>
+                    <h6>Vue.js</h6>
                 </div>
               </div>
             </div>

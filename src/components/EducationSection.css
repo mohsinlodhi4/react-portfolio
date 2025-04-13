@@ -1,0 +1,14 @@
+.education-section h2 {
+    font-weight: 600;
+    color: #662d91; /* your brand color */
+  }
+  
+  .education-section .card {
+    border-left: 5px solid #662d91;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .education-section .card:hover {
+    transform: translateY(-4px);
+  }
+  
