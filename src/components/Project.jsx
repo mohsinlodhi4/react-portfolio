@@ -30,15 +30,15 @@ const Project = () => {
                     </div>
                     <div className="project_wrap_box_list">
                       <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>tailwind.js</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Tailwind</li>
                       </ul>
                       <ul>
-                        <li>react.js</li>
-                        <li>node.js</li>
-                        <li>mongoDB</li>
-                        <li>gcp</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>GCP</li>
                       </ul>
                     </div>
                     <div className="project_wrap_box_btn">
@@ -60,20 +60,20 @@ const Project = () => {
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                   <div className="project_wrap_box_inner" data-aos="fade-left" data-aos-duration="2000">
                     <div className="project_wrap_box_text" >
-                      <h6>POS - MJ Farbrics</h6>
+                      <h6>POS - MJ Fabrics</h6>
                       <p> A Point of sale software for textile company to automate their processes like stock management, invoicing, ledgers and much more.</p>
                     </div>
                     <div className="project_wrap_box_list">
                       <ul>
-                        <li>vue.js</li>
-                        <li>nuxt.js</li>
-                        <li>bootstrap</li>
+                        <li>Vue.js</li>
+                        <li>Nuxt.js</li>
+                        <li>Bootstrap</li>
                       </ul>
                       <ul>
-                        <li>redis</li>
-                        <li>php</li>
-                        <li>laravel</li>
-                        <li>mysql</li>
+                        <li>Redis</li>
+                        <li>Php</li>
+                        <li>Laravel</li>
+                        <li>MySQL</li>
                       </ul>
                     </div>
                     <div className="project_wrap_box_btn">
@@ -102,17 +102,17 @@ const Project = () => {
                     </div>
                     <div className="project_wrap_box_list">
                       <ul>
-                        <li>microservices</li>
-                        <li>aws</li>
-                        <li>redis</li>
-                        <li>kafka</li>
+                        <li>Microservices</li>
+                        <li>AWS</li>
+                        <li>Redis</li>
+                        <li>Kafka</li>
                       </ul>
                       <ul>
-                        <li>python</li>
-                        <li>javascript.js</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
                         <li>nest.js</li>
-                        <li>vue.js</li>
-                        <li>mongoDB</li>
+                        <li>Vue.js</li>
+                        <li>MongoDB</li>
                       </ul>
                     </div>
                     <div className="project_wrap_box_btn">
@@ -140,16 +140,16 @@ const Project = () => {
                     </div>
                     <div className="project_wrap_box_list">
                       <ul>
-                        <li>aws</li>
-                        <li>elasticsearch</li>
-                        <li>mysql</li>
-                        <li>javascript.js</li>
+                        <li>AWS</li>
+                        <li>Elasticsearch</li>
+                        <li>MySQL</li>
+                        <li>Javascript</li>
                       </ul>
                       <ul>
-                        <li>next.js</li>
-                        <li>node.js</li>
-                        <li>python</li>
-                        <li>mongoDB</li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>MongoDB</li>
                       </ul>
                     </div>
                     <div className="project_wrap_box_btn">
