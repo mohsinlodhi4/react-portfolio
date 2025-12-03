@@ -1,173 +1,217 @@
-/* GLOBAL_CSS_CHANGES_START_FROM_HERE */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  overflow-x: hidden;
-}
-h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea, label {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none !important;
-}
-a:hover {
-  text-decoration: none;
-}
-a:focus {
-  text-decoration: none;
-}
-button, input, textarea,select {
-  outline: none !important;
-}
-/* GLOBAL_CSS_CHANGES_END_HERE */
+/* ===================================
+   APP.CSS - MAIN APPLICATION STYLES
+   Modern React Portfolio with Bootstrap 5
+   =================================== */
 
+/* ===================================
+   FONT IMPORTS
+   =================================== */
 
-
-/* GLOBAL_VAR_CSS_START_FROM_HERE */
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --main-color: #111827;
-  --syne-Regular: "Syne-Regular";
-  --syne-medium: "Syne-Medium";
-  --syne-bold: "Syne-Bold";
-}
-/* GLOBAL_VAR_CSS_CSS_HERE */
-
-
-/* CSS-FONT-VARIABLE-START */
 @font-face {
   font-family: "Syne-Regular";
   src: url("./front/webfonts/Syne-Regular.ttf");
-  font-weight: regular;
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Syne-Medium";
   src: url("./front/webfonts/Syne-Medium.ttf");
-  font-weight: regular;
+  font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Syne-Bold";
   src: url("./front/webfonts/Syne-Bold.ttf");
-  font-weight: regular;
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
-/* CSS-FONT-VARIABLE-END */
 
-/* SCROLL-CSS */
-body::-webkit-scrollbar {
-  width: 5px;
-}
-body::-webkit-scrollbar-track {
-  background: var(--white); 
-}
-body::-webkit-scrollbar-thumb {
-background-color: var(--black);
-}
-/* SCROLL-CSS */
+/* ===================================
+   GLOBAL APP STYLES
+   =================================== */
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-/* HEADER-CSS-START */
-.header_wrapper {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-}
-.header_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10px;
-  /* border: 1px solid var(--white); */
-}
-.header_link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  background-color: var(--white);
-  padding: 20px 30px;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 50px;
-}
-.header_nav ul {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.header_nav ul li a {
-  font-size: 22px;
-  font-family: var(--syne-medium);
-  color: #75777c;
-  padding: 10px;
+/* Ensure all sections are properly spaced */
+section {
   position: relative;
-  transition: 0.5s all;
 }
 
-.header_nav ul li a:hover {
-  transform: scale(0.9);
-  color: var(--main-color);
+/* ===================================
+   UTILITY OVERRIDES
+   =================================== */
+
+/* Bootstrap spacing adjustments */
+.section-padding-sm {
+  padding: calc(var(--section-padding) * 0.7) 0;
 }
-.header_nav ul li a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  border-radius: 20px;
-  bottom: 0px;
-  left: 0;
-  background-color: #75777c;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: 0.5s all;
+
+/* Smooth transitions for all interactive elements */
+button,
+a,
+input,
+textarea,
+select {
+  transition: var(--transition-base);
 }
-.header_nav ul li a:hover::before {
-  transform: scaleX(1);
-  background-color: var(--main-color);
+
+/* Remove outline on click but keep for keyboard navigation */
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
 }
-.index_banner_btn_inner {
-  display: flex;
-  /* justify-content: space-evenly; */
-  /* justify-content: center; */
+
+/* ===================================
+   CONTAINER CUSTOMIZATION
+   =================================== */
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1320px;
+  }
 }
-.common_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 210px;
-  height: 60px;
-  background-color: #adadad;
-  border-radius: 50px;
-  font-size: 20px;
-  font-family: var(--syne-medium);
-  color: var(--main-color );
-  cursor: pointer;
-  text-transform: capitalize;
-  position: relative;
-  border: 1px solid transparent;
-  transition: .5s all;
+
+/* ===================================
+   BOOTSTRAP INTEGRATION
+   =================================== */
+
+/* Override Bootstrap button styles when using custom buttons */
+.btn-primary-custom,
+.btn-outline-custom {
+  border: none;
 }
-.common_btn:hover{
-  background-color: var(--main-color);
-  color: var(--white);
-  border: 1px solid var(--white);
+
+.btn-primary-custom:hover,
+.btn-outline-custom:hover {
+  text-decoration: none;
 }
-/* HEADER-CSS-END */
+
+/* Ensure Bootstrap grid works properly */
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+}
+
+/* ===================================
+   LOADING STATES
+   =================================== */
+
+.loading-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--accent-bg) 25%,
+    rgba(102, 45, 145, 0.05) 50%,
+    var(--accent-bg) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ===================================
+   IMAGE OPTIMIZATION
+   =================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lazy loading placeholder */
+img[loading="lazy"] {
+  background: var(--accent-bg);
+}
+
+/* ===================================
+   FORM ELEMENTS
+   =================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  font-family: var(--font-primary);
+  border-radius: 12px;
+  border: 2px solid var(--border-light);
+  padding: 0.875rem 1.25rem;
+  font-size: 1rem;
+  transition: var(--transition-base);
+  background: var(--white);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 4px rgba(102, 45, 145, 0.1);
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+
+@media print {
+  .header-modern,
+  .footer-section,
+  .scroll-to-top {
+    display: none;
+  }
+  
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+/* ===================================
+   MOBILE MENU BUTTON (OLD - REMOVE IF NOT USED)
+   =================================== */
+
+.mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+
+/* ===================================
+   LEGACY STYLES CLEANUP
+   These are maintained for backward compatibility
+   Can be removed after full migration
+   =================================== */
+
+/* Old timeline styles - kept for Education fallback */
 
 
 
