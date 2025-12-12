@@ -74,8 +74,8 @@ const Header = () => {
                                         href={item.href} 
                                         className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
                                         onClick={closeMobileMenu}
-                                        data-aos="fade-down"
-                                        data-aos-delay={index * 50}
+                                        // data-aos="fade-down"
+                                        // data-aos-delay={index * 50}
                                     >
                                         <span className="nav-icon">{item.icon}</span>
                                         <span className="nav-text">{item.label}</span>
@@ -89,8 +89,8 @@ const Header = () => {
                             href="#footer" 
                             className="btn-primary-custom header-cta"
                             onClick={closeMobileMenu}
-                            data-aos="fade-down"
-                            data-aos-delay="250"
+                            // data-aos="fade-down"
+                            // data-aos-delay="250"
                         >
                             <FaEnvelope />
                             <span>Let's Connect</span>
