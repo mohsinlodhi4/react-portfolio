@@ -103,7 +103,7 @@ const Banner = () => {
                   <HiCode />
                 </div>
                 <div className="stat-content">
-                  <h4>3+</h4>
+                  <h4>4+</h4>
                   <p>Years Experience</p>
                 </div>
               </div>

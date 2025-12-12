@@ -145,7 +145,15 @@
   font-size: 2rem;
   transition: all 0.4s ease;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-purple);
+  z-index: 10;
 }
 
 .contact-card:hover .contact-icon {
@@ -159,16 +167,18 @@
   color: var(--white);
   margin-bottom: 0.75rem;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  font-weight: 700;
 }
 
 .contact-card p {
   font-family: var(--font-medium);
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--white);
   margin: 0;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  opacity: 0.95;
 }
 
 /* ===================================
@@ -427,24 +437,102 @@
     margin-bottom: 3rem;
   }
 
+  /* Ensure full width on mobile */
+  .contact-methods {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact-methods .row {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .contact-methods .col-lg-4,
+  .contact-methods .col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 1.5rem;
+    display: block !important;
+  }
+
   .contact-card {
-    padding: 1.75rem 1.25rem;
+    padding: 2.5rem 2rem !important;
+    min-height: 220px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 20px !important;
+    text-decoration: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-card::before {
+    display: none !important;
+  }
+
+  .contact-card * {
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .contact-icon {
-    width: 55px;
-    height: 55px;
-    font-size: 1.35rem;
-    margin-bottom: 1rem;
+    width: 75px !important;
+    height: 75px !important;
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    background: var(--white) !important;
+    color: var(--primary-purple) !important;
+    z-index: 100 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    border-radius: 18px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .contact-icon svg {
+    width: 2rem !important;
+    height: 2rem !important;
+    color: var(--primary-purple) !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
   .contact-card h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.75rem !important;
+    margin-bottom: 0.75rem !important;
+    color: var(--white) !important;
+    font-family: var(--font-bold) !important;
+    font-weight: 700 !important;
+    z-index: 100 !important;
+    display: block !important;
+    position: relative !important;
+    visibility: visible !important;
+    line-height: 1.3 !important;
   }
 
   .contact-card p {
-    font-size: 0.95rem;
+    font-size: 1.125rem !important;
+    color: var(--white) !important;
+    word-break: break-word !important;
+    z-index: 100 !important;
+    display: block !important;
+    position: relative !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
   }
 
   .social-section {
@@ -510,22 +598,81 @@
     font-size: 1.75rem;
   }
 
+  .cta-description {
+    font-size: 0.95rem;
+  }
+
+  .contact-methods .row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .contact-methods .col-lg-4,
+  .contact-methods .col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
   .contact-card {
-    padding: 1.5rem 1rem;
+    padding: 2.25rem 1.75rem !important;
+    min-height: 200px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    width: 100% !important;
+  }
+
+  .contact-card::before {
+    display: none !important;
+  }
+
+  .contact-card * {
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .contact-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.25rem;
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 1.85rem !important;
+    background: var(--white) !important;
+    color: var(--primary-purple) !important;
+    z-index: 100 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 1.25rem !important;
+    border-radius: 18px !important;
+  }
+
+  .contact-icon svg {
+    width: 1.85rem !important;
+    height: 1.85rem !important;
+    color: var(--primary-purple) !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
   .contact-card h4 {
-    font-size: 1.125rem;
+    font-size: 1.5rem !important;
+    color: var(--white) !important;
+    font-family: var(--font-bold) !important;
+    font-weight: 700 !important;
+    z-index: 100 !important;
+    display: block !important;
+    margin-bottom: 0.625rem !important;
+    visibility: visible !important;
   }
 
   .contact-card p {
-    font-size: 0.875rem;
+    font-size: 1.05rem !important;
+    color: var(--white) !important;
+    z-index: 100 !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 
   .social-link {
@@ -556,6 +703,48 @@
     font-size: 1rem;
     bottom: 1.25rem;
     right: 1.25rem;
+  }
+}
+
+/* ===================================
+   CRITICAL MOBILE OVERRIDES
+   =================================== */
+
+/* Force visibility on all mobile devices */
+@media (max-width: 767px) {
+  /* Override any hiding styles */
+  .footer-section .contact-methods,
+  .footer-section .contact-methods *,
+  .footer-section .contact-card,
+  .footer-section .contact-card *,
+  .footer-section .contact-icon,
+  .footer-section .contact-icon *,
+  .footer-section .contact-card h4,
+  .footer-section .contact-card p {
+    visibility: visible !important;
+    display: flex !important;
+    opacity: 1 !important;
+  }
+
+  .footer-section .contact-card {
+    flex-direction: column !important;
+  }
+
+  .footer-section .contact-card h4,
+  .footer-section .contact-card p {
+    display: block !important;
+  }
+
+  /* Override AOS animations on mobile if they're hiding content */
+  .contact-card[data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+
+  .contact-card[data-aos].aos-animate {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 

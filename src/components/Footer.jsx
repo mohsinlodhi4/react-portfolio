@@ -28,22 +28,23 @@ const Footer = () => {
 
             {/* Contact Methods */}
             <div className="contact-methods row g-4 justify-content-center mb-5">
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 <a 
                   href="mailto:mohsinlodhi4@gmail.com" 
                   className="contact-card"
                   data-aos="zoom-in"
                   data-aos-delay="100"
+                  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
                 >
-                  <div className="contact-icon">
+                  <div className="contact-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <FaEnvelope />
                   </div>
-                  <h4>Email</h4>
-                  <p>mohsinlodhi4@gmail.com</p>
+                  <h4 style={{ color: 'white', visibility: 'visible' }}>Email</h4>
+                  <p style={{ color: 'white', visibility: 'visible' }}>mohsinlodhi4@gmail.com</p>
                 </a>
               </div>
 
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 <a 
                   href="https://www.linkedin.com/in/mohsin-lodhi-53685b202/" 
                   target="_blank"
@@ -51,16 +52,17 @@ const Footer = () => {
                   className="contact-card"
                   data-aos="zoom-in"
                   data-aos-delay="200"
+                  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
                 >
-                  <div className="contact-icon">
+                  <div className="contact-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <FaLinkedinIn />
                   </div>
-                  <h4>LinkedIn</h4>
-                  <p>Connect with me</p>
+                  <h4 style={{ color: 'white', visibility: 'visible' }}>LinkedIn</h4>
+                  <p style={{ color: 'white', visibility: 'visible' }}>Connect with me</p>
                 </a>
               </div>
 
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 <a 
                   href="https://github.com/mohsinlodhi4" 
                   target="_blank"
@@ -68,12 +70,13 @@ const Footer = () => {
                   className="contact-card"
                   data-aos="zoom-in"
                   data-aos-delay="300"
+                  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
                 >
-                  <div className="contact-icon">
+                  <div className="contact-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <FaGithub />
                   </div>
-                  <h4>GitHub</h4>
-                  <p>Check out my code</p>
+                  <h4 style={{ color: 'white', visibility: 'visible' }}>GitHub</h4>
+                  <p style={{ color: 'white', visibility: 'visible' }}>Check out my code</p>
                 </a>
               </div>
             </div>
@@ -123,7 +126,8 @@ const Footer = () => {
             </div>
             <div className="col-lg-6 text-center text-lg-end">
               <p className="copyright">
-                © {new Date().getFullYear()} Mohsin Khan Lodhi. Built with <FaHeart className="heart-icon" /> using React & Bootstrap
+                {/* © {new Date().getFullYear()} Mohsin Khan Lodhi. Built with <FaHeart className="heart-icon" /> using React & Bootstrap */}
+                © {new Date().getFullYear()}
               </p>
             </div>
           </div>
