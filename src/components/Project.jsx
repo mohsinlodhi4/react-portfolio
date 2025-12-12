@@ -20,14 +20,14 @@ const projects = [
   },
   {
     id: 2,
-    title: 'POS - MJ Fabrics',
-    description: 'A Point of sale software for textile company to automate their processes like stock management, invoicing, ledgers and much more.',
+    title: 'Customized ERP',
+    description: 'An ERP software for a textile company to automate their processes like stock management, invoicing, accounting, and much more. It includes advanced accounting features like double entry and multiple reports.',
     image: '/images/pos.png',
     category: 'Business',
     featured: false,
     technologies: ['Vue.js', 'Nuxt.js', 'Laravel', 'MySQL', 'Redis', 'Bootstrap'],
     links: {
-      demo: 'https://software.mjfabricsstore.com/',
+      demo: 'https://software.mjfabric.com/',
       github: null
     }
   },
