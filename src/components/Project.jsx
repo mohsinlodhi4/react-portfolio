@@ -1,161 +1,55 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaExternalLinkAlt, FaGithub, FaCode, FaRocket } from 'react-icons/fa';
-import { HiSparkles } from 'react-icons/hi';
+import React, { useCallback, useState } from 'react';
+import projectsData from '../data/projectsData';
+import ProjectCard from './projects/ProjectCard';
+import Modal from './projects/Modal';
+import ProjectCaseStudy from './projects/ProjectCaseStudy';
 import '../styles/Project.css';
+import '../styles/ProjectModal.css';
 
-const projects = [
-  {
-    id: 1,
-    title: 'Bluu Health',
-    description: 'HIPAA Compliant EHR Software - A secure platform for managing appointments, billing, and claims. AI powered tools help practitioners quickly generate summaries of patient history and past visits.',
-    image: '/images/bluuhealth.png',
-    category: 'Healthcare',
-    featured: true,
-    technologies: ['React.js', 'Node.js', 'MongoDB', 'GCP', 'Tailwind', 'AI/ML'],
-    links: {
-      demo: 'https://bluuhealth.com/',
-      github: null
-    }
-  },
-  {
-    id: 2,
-    title: 'Customized ERP',
-    description: 'An ERP software for a textile company to automate their processes like stock management, invoicing, accounting, and much more. It includes advanced accounting features like double entry and multiple reports.',
-    image: '/images/pos.png',
-    category: 'Business',
-    featured: false,
-    technologies: ['Vue.js', 'Nuxt.js', 'Laravel', 'MySQL', 'Redis', 'Bootstrap'],
-    links: {
-      demo: 'https://software.mjfabric.com/',
-      github: null
-    }
-  },
-  {
-    id: 3,
-    title: 'Idenfo Direct',
-    description: 'Enable seamless onboarding, fight financial crime through Anti-Money Laundering and Know Your Customer services.',
-    image: '/images/idenfodirect.png',
-    category: 'FinTech',
-    featured: true,
-    technologies: ['Python', 'Nest.js', 'Vue.js', 'MongoDB', 'AWS', 'Kafka', 'Redis'],
-    links: {
-      demo: 'https://www.idenfodirect.com/',
-      github: null
-    }
-  },
-  {
-    id: 4,
-    title: 'Oliv',
-    description: 'A platform for businesses and job seekers to connect and explore opportunity. Allows talent to find internships and graduate jobs while enabling them to enhance their resume with AI features.',
-    image: '/images/oliv.png',
-    category: 'HR Tech',
-    featured: false,
-    technologies: ['Next.js', 'Node.js', 'Python', 'MongoDB', 'AWS', 'Elasticsearch'],
-    links: {
-      demo: 'https://oliv.com/',
-      github: null
-    }
-  }
-];
+const TITLE_ID = 'case-study-title';
 
 const Project = () => {
+  const [activeProject, setActiveProject] = useState(null);
+
+  const openProject = useCallback((project) => {
+    setActiveProject(project);
+  }, []);
+
+  const closeProject = useCallback(() => {
+    setActiveProject(null);
+  }, []);
+
   return (
     <section className="projects-section section-padding" id="projects">
       <div className="container">
-        {/* Section Title */}
         <div className="section-title" data-aos="fade-up">
           <h2>Featured Projects</h2>
           <div className="title-line"></div>
-          <p>Showcasing my best work in web development and software engineering</p>
+          <p>
+            Interactive case studies showcasing how I design, ship, and scale
+            real-world software products.
+          </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div 
-              className="project-card-wrapper"
+        <div className="pc-grid">
+          {projectsData.map((project, index) => (
+            <ProjectCard
               key={project.id}
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-            >
-              <div className="project-card card-hover-lift">
-                {/* Project Image */}
-                <div className="project-image-wrapper img-hover-overlay">
-                  <img 
-                    src={project.image} 
-                    alt={`${project.title} - ${project.category} project`}
-                    className="project-image"
-                  />
-                  {project.featured && (
-                    <div className="featured-badge">
-                      <HiSparkles className="me-1" />
-                      Featured
-                    </div>
-                  )}
-                  <div className="project-overlay">
-                    <div className="overlay-content">
-                      <FaRocket className="overlay-icon" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Project Content */}
-                <div className="project-content">
-                  {/* Category Badge */}
-                  <div className="project-meta mb-3">
-                    <span className="category-badge">{project.category}</span>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="project-title mb-3">{project.title}</h3>
-
-                  {/* Description */}
-                  <p className="project-description mb-4">{project.description}</p>
-
-                  {/* Technologies */}
-                  <div className="project-technologies mb-4">
-                    <div className="tech-icon mb-2">
-                      <FaCode />
-                    </div>
-                    <div className="tech-tags">
-                      {project.technologies.map((tech, idx) => (
-                        <span key={idx} className="tech-tag">{tech}</span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Links */}
-                  <div className="project-links">
-                    {project.links.demo && (
-                      <Link 
-                        to={project.links.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-primary-custom btn-sm"
-                      >
-                        <FaExternalLinkAlt />
-                        <span>Live Demo</span>
-                      </Link>
-                    )}
-                    {project.links.github && (
-                      <Link 
-                        to={project.links.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-outline-custom btn-sm"
-                      >
-                        <FaGithub />
-                        <span>View Code</span>
-                      </Link>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
+              project={project}
+              index={index}
+              onOpen={openProject}
+            />
           ))}
         </div>
       </div>
+
+      <Modal
+        isOpen={Boolean(activeProject)}
+        onClose={closeProject}
+        labelledBy={TITLE_ID}
+      >
+        <ProjectCaseStudy project={activeProject} titleId={TITLE_ID} />
+      </Modal>
     </section>
   );
 };
