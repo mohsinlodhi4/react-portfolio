@@ -1,19 +1,32 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.be81e6a9.css",
-    "main.js": "/react-portfolio/static/js/main.0a446d97.js",
+    "main.js": "/react-portfolio/static/js/main.4f26effc.js",
     "static/media/footer_razer.png": "/react-portfolio/static/media/footer_razer.45fc0430251722a89b3b.png",
+    "static/media/bluuhealth.png": "/react-portfolio/static/media/bluuhealth.916d8eb99d2a082d27c4.png",
+    "static/media/idenfodirect.png": "/react-portfolio/static/media/idenfodirect.3c82f82b51c075bd1d1c.png",
+    "static/media/bluu-3.png": "/react-portfolio/static/media/bluu-3.6cab350bc22c55776b90.png",
+    "static/media/bluu-4.png": "/react-portfolio/static/media/bluu-4.f09969d96b2c0743f360.png",
+    "static/media/mj-3.png": "/react-portfolio/static/media/mj-3.c86c79f169fb9836dca3.png",
+    "static/media/mj-4.png": "/react-portfolio/static/media/mj-4.b7c1dcc7a5f9744c1b5a.png",
+    "static/media/mj-2.png": "/react-portfolio/static/media/mj-2.3e83209de1501e3caad2.png",
+    "static/media/oliv.png": "/react-portfolio/static/media/oliv.61a2699cf11cb185af22.png",
+    "static/media/bluu-2.png": "/react-portfolio/static/media/bluu-2.3489d020245de1e3f376.png",
+    "static/media/mohsin.png": "/react-portfolio/static/media/mohsin.c48f4d563d5a0bdd2a97.png",
+    "static/media/mj-1.png": "/react-portfolio/static/media/mj-1.1ac3bdb9cb44e7c1c19e.png",
+    "static/media/pos.png": "/react-portfolio/static/media/pos.3bcafea554ff547d538b.png",
     "static/media/Syne-Bold.ttf": "/react-portfolio/static/media/Syne-Bold.4f7a3ab12ddb09781520.ttf",
     "static/media/Syne-Medium.ttf": "/react-portfolio/static/media/Syne-Medium.767c33d27d5f99f3ed3e.ttf",
     "static/media/Syne-Regular.ttf": "/react-portfolio/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
+    "static/media/idenfo.png": "/react-portfolio/static/media/idenfo.d704ee8d4b607a97631e.png",
     "static/media/bg_lines.png": "/react-portfolio/static/media/bg_lines.24359027aa982c5d0125.png",
     "static/media/nextjs.png": "/react-portfolio/static/media/nextjs.f8c872ceafc8572eab39.png",
     "index.html": "/react-portfolio/index.html",
     "main.be81e6a9.css.map": "/react-portfolio/static/css/main.be81e6a9.css.map",
-    "main.0a446d97.js.map": "/react-portfolio/static/js/main.0a446d97.js.map"
+    "main.4f26effc.js.map": "/react-portfolio/static/js/main.4f26effc.js.map"
   },
   "entrypoints": [
     "static/css/main.be81e6a9.css",
-    "static/js/main.0a446d97.js"
+    "static/js/main.4f26effc.js"
   ]
 }
