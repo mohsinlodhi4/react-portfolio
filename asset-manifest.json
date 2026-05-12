@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e867e29.css",
-    "main.js": "/static/js/main.4ab910c1.js",
-    "static/media/footer_razer.png": "/static/media/footer_razer.45fc0430251722a89b3b.png",
-    "static/media/Syne-Bold.ttf": "/static/media/Syne-Bold.4f7a3ab12ddb09781520.ttf",
-    "static/media/Syne-Medium.ttf": "/static/media/Syne-Medium.767c33d27d5f99f3ed3e.ttf",
-    "static/media/Syne-Regular.ttf": "/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
-    "static/media/bg_lines.png": "/static/media/bg_lines.24359027aa982c5d0125.png",
-    "static/media/nextjs.png": "/static/media/nextjs.f8c872ceafc8572eab39.png",
-    "index.html": "/index.html",
-    "main.9e867e29.css.map": "/static/css/main.9e867e29.css.map",
-    "main.4ab910c1.js.map": "/static/js/main.4ab910c1.js.map"
+    "main.css": "/react-portfolio/static/css/main.be81e6a9.css",
+    "main.js": "/react-portfolio/static/js/main.0a446d97.js",
+    "static/media/footer_razer.png": "/react-portfolio/static/media/footer_razer.45fc0430251722a89b3b.png",
+    "static/media/Syne-Bold.ttf": "/react-portfolio/static/media/Syne-Bold.4f7a3ab12ddb09781520.ttf",
+    "static/media/Syne-Medium.ttf": "/react-portfolio/static/media/Syne-Medium.767c33d27d5f99f3ed3e.ttf",
+    "static/media/Syne-Regular.ttf": "/react-portfolio/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
+    "static/media/bg_lines.png": "/react-portfolio/static/media/bg_lines.24359027aa982c5d0125.png",
+    "static/media/nextjs.png": "/react-portfolio/static/media/nextjs.f8c872ceafc8572eab39.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.be81e6a9.css.map": "/react-portfolio/static/css/main.be81e6a9.css.map",
+    "main.0a446d97.js.map": "/react-portfolio/static/js/main.0a446d97.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e867e29.css",
-    "static/js/main.4ab910c1.js"
+    "static/css/main.be81e6a9.css",
+    "static/js/main.0a446d97.js"
   ]
 }
