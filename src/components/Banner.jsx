@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedinIn, FaGithub, FaDownload, FaArrowRight } from 'react-icons/fa';
 import { HiCode, HiSparkles } from 'react-icons/hi';
+import mohsinPortrait from '../assets/images/mohsin.png';
 import '../styles/Banner.css';
 
 const Banner = () => {
@@ -91,7 +92,7 @@ const Banner = () => {
                 <div className="image-decoration decoration-1"></div>
                 <div className="image-decoration decoration-2"></div>
                 <img 
-                  src="/mohsin.png" 
+                  src={mohsinPortrait} 
                   className="img-fluid hero-image" 
                   alt="Mohsin Khan Lodhi - Software Engineer" 
                 />

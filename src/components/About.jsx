@@ -1,6 +1,10 @@
 import React from 'react';
 import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaChevronRight } from 'react-icons/fa';
 import { HiLightningBolt } from 'react-icons/hi';
+import logoIdenfo from '../assets/images/idenfo.png';
+import logoLinkstar from '../assets/images/linkstar.png';
+import logoIncreaseRev from '../assets/images/increaserev.png';
+import logoDeevloopers from '../assets/images/deevloopers.png';
 import '../styles/About.css';
 
 const experiences = [
@@ -10,7 +14,7 @@ const experiences = [
     company: 'Idenfo',
     location: 'Pakistan',
     period: 'May 2023 - Current',
-    logo: '/images/idenfo.png',
+    logo: logoIdenfo,
     current: true,
     achievements: [
       'Engineered robust API in Node.js enabling seamless data retrieval from MongoDB database leading to 25% reduction in loading time and improved user experience',
@@ -24,7 +28,7 @@ const experiences = [
     company: 'Linkstar',
     location: 'Pakistan',
     period: 'March 2022 - April 2023',
-    logo: '/images/linkstar.png',
+    logo: logoLinkstar,
     current: false,
     achievements: [
       'Proficiently managed microservices architecture for websites built on multiple tech stacks like Node.js, PHP, React and Next.js',
@@ -39,7 +43,7 @@ const experiences = [
     company: 'Increase Rev',
     location: 'Pakistan',
     period: 'October 2021 - February 2022',
-    logo: '/images/increaserev.png',
+    logo: logoIncreaseRev,
     current: false,
     achievements: [
       'Developed image optimization library and plugin which led to boosting 50% of website\'s load speed on websites with high graphics content',
@@ -52,7 +56,7 @@ const experiences = [
     company: 'Deevloopers',
     location: 'Pakistan',
     period: 'August 2021 - October 2022',
-    logo: '/images/deevloopers.png',
+    logo: logoDeevloopers,
     current: false,
     achievements: [
       'Incorporated data visualization graphs, using Chart JS, allowing the admin to track user and connection data.',

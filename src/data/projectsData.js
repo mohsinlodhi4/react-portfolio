@@ -1,3 +1,16 @@
+import bluuhealthCover from '../assets/images/bluuhealth.png';
+import bluu2 from '../assets/images/bluu/bluu-2.png';
+import bluu3 from '../assets/images/bluu/bluu-3.png';
+import bluu4 from '../assets/images/bluu/bluu-4.png';
+import posCover from '../assets/images/pos.png';
+import mj1 from '../assets/images/mj/mj-1.png';
+import mj2 from '../assets/images/mj/mj-2.png';
+import mj3 from '../assets/images/mj/mj-3.png';
+import mj4 from '../assets/images/mj/mj-4.png';
+import idenfodirectCover from '../assets/images/idenfodirect.png';
+import idenfoLogo from '../assets/images/idenfo.png';
+import olivCover from '../assets/images/oliv.png';
+
 /**
  * Centralized projects data source.
  * Each project follows a reusable case-study schema so new projects can be
@@ -9,8 +22,8 @@
  *   title: string,
  *   tagline: string,           // short one-liner under the title
  *   description: string,       // card description
- *   image: string,             // hero / card cover
- *   gallery: string[],         // multiple screenshots for modal carousel
+ *   image: string,             // hero / card cover (bundled asset URL from import)
+ *   gallery: string[],         // multiple screenshots (bundled asset URLs)
  *   category: string,
  *   featured: boolean,
  *   year: string,
@@ -34,12 +47,8 @@ const projectsData = [
     tagline: 'HIPAA-Compliant EHR Platform with AI Clinical Tools',
     description:
       'A secure healthcare platform for managing appointments, billing, and claims — supercharged with AI summaries of patient history and past visits.',
-    image: '/images/bluuhealth.png',
-    gallery: [
-      '/images/bluu/bluu-2.png',
-      '/images/bluu/bluu-3.png',
-      '/images/bluu/bluu-4.png',
-    ],
+    image: bluuhealthCover,
+    gallery: [bluu2, bluu3, bluu4],
     category: 'Healthcare',
     featured: true,
     year: '2024',
@@ -82,8 +91,8 @@ const projectsData = [
     tagline: 'End-to-End ERP for a Textile Manufacturer',
     description:
       'An ERP that automates stock management, invoicing, and accounting with advanced double-entry bookkeeping and a rich reporting suite.',
-    image: '/images/pos.png',
-    gallery: ['/images/mj/mj-1.png', '/images/mj/mj-2.png', '/images/mj/mj-3.png', '/images/mj/mj-4.png'],
+    image: posCover,
+    gallery: [mj1, mj2, mj3, mj4],
     category: 'Business / ERP',
     featured: false,
     year: '2023',
@@ -126,8 +135,8 @@ const projectsData = [
     tagline: 'AML & KYC Onboarding for Regulated Industries',
     description:
       'A FinTech platform enabling seamless onboarding while fighting financial crime through automated AML and KYC services.',
-    image: '/images/idenfodirect.png',
-    gallery: ['/images/idenfodirect.png', '/images/idenfo.png', '/images/idenfodirect.png'],
+    image: idenfodirectCover,
+    gallery: [idenfodirectCover, idenfoLogo, idenfodirectCover],
     category: 'FinTech',
     featured: true,
     year: '2023',
@@ -170,8 +179,8 @@ const projectsData = [
     tagline: 'AI-Powered Early-Career Hiring Platform',
     description:
       'A platform connecting students and employers, with AI tools that supercharge resumes and surface the right internships and graduate jobs.',
-    image: '/images/oliv.png',
-    gallery: ['/images/oliv.png', '/images/oliv.png', '/images/oliv.png'],
+    image: olivCover,
+    gallery: [olivCover, olivCover, olivCover],
     category: 'HR Tech',
     featured: false,
     year: '2024',
