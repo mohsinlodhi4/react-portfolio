@@ -36,9 +36,9 @@ const projectsData = [
       'A secure healthcare platform for managing appointments, billing, and claims — supercharged with AI summaries of patient history and past visits.',
     image: '/images/bluuhealth.png',
     gallery: [
-      '/images/bluuhealth.png',
-      '/images/bluuhealth.png',
-      '/images/bluuhealth.png',
+      '/images/bluu/bluu-2.png',
+      '/images/bluu/bluu-3.png',
+      '/images/bluu/bluu-4.png',
     ],
     category: 'Healthcare',
     featured: true,
@@ -83,7 +83,7 @@ const projectsData = [
     description:
       'An ERP that automates stock management, invoicing, and accounting with advanced double-entry bookkeeping and a rich reporting suite.',
     image: '/images/pos.png',
-    gallery: ['/images/pos.png', '/images/pos.png', '/images/pos.png'],
+    gallery: ['/images/mj/mj-1.png', '/images/mj/mj-2.png', '/images/mj/mj-3.png', '/images/mj/mj-4.png'],
     category: 'Business / ERP',
     featured: false,
     year: '2023',

@@ -14,7 +14,8 @@ const Header = () => {
             setIsScrolled(window.scrollY > 50);
             
             // Update active section based on scroll position
-            const sections = ['home', 'aboutus', 'projects', 'skills1', 'education', 'footer'];
+            // const sections = ['home', 'aboutus', 'projects', 'skills1', 'education', 'footer'];
+            const sections = ['home', 'projects', 'skills1', 'footer'];
             const currentSection = sections.find(section => {
                 const element = document.getElementById(section);
                 if (element) {
@@ -40,10 +41,10 @@ const Header = () => {
 
     const navItems = [
         { href: '/', label: 'Home', icon: <FaHome />, id: 'home' },
-        { href: '#aboutus', label: 'Experience', icon: <FaBriefcase />, id: 'aboutus' },
+        // { href: '#aboutus', label: 'Experience', icon: <FaBriefcase />, id: 'aboutus' },
         { href: '#projects', label: 'Projects', icon: <FaProjectDiagram />, id: 'projects' },
         { href: '#skills1', label: 'Skills', icon: <FaCode />, id: 'skills1' },
-        { href: '#education', label: 'Education', icon: <FaGraduationCap />, id: 'education' },
+        // { href: '#education', label: 'Education', icon: <FaGraduationCap />, id: 'education' },
     ];
 
     return (
